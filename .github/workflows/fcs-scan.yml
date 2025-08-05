@@ -3,7 +3,10 @@ name: FCS IaC Security Scan
 
 # Trigger events - when this workflow should run
 # Runs on every push and pull request to any branch
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 # Define permissions required for this workflow
 permissions:
